@@ -1,124 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>PetShop</title>
 </head>
-<body">
-<!-- Encabezado, navbar -->
+<body>
     <header>
-    <!-- barra superior -->
-        <section class="barra_superior">
+    <!-- Barra superior-->
+        <div class="barraSup">
             <p>Grandes ofertas en comederos</p>
+            <ul>
+                <li>Español <i class="fas fa-angle-down"></i></li>
+                <li>ARG$ <i class="fas fa-angle-down"></i></li>
+            </ul>
+
+        </div>
+    <!-- Barra inferior -->
+        <div class="barraInf">
+            <a href="./index.html"><img src="./img/Logo.png" alt="Front Cat&Dog"></a>
             <nav>
-                <ul class="nav-bar">
-                    <li><a href="#">Español</a><img src="/img/flechita.png" alt="flechita-abajo"></li>
-                    <li><a href="#">$ARG</a><img src="/img/flechita.png" alt="flechita-abajo"></li>
-                </ul>
-            </nav>
-        </section>
-    <!-- Barra de menu principal -->
-        <section>
-            <nav>
-                <img src="/img/Logo.png" alt="Front Cat&Dog">
                 <ul>
-                    <li>Categorias</li>
-                    <li>Pets</li>
-                    <li>Nosotros</li>
-                    <li>Contacto</li>
+                    <li><a href="./pages/categorias.html">Categorías</a></li>
+                    <li><a href="./pages/pets.html">Pets</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/contactanos.html">Contactanos</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
 <!-- Contenido para el area principal -->
     <main>
     <!-- Seccion de banner -->
-        <section>
-            <img src="/img/bowl-and-pet-daities-on-green-background 1.png" alt="Plato de comida, huesos para pets">
+        <section class="bannerPrincipal">
             <h2>¡Es un placer tenerte aquí! </h2>
             <p>¡Comederos en descuento!</p>
-            <button>COMEDEROS</button>
+            <button>Comederos</button>
         </section>
     <!-- Seccion de productos -->
-        <section>
-            <img src="/img/patita-de-perro.png" alt="Huella de perro">
-            <h2>Productos Destacados</h2>
-            <p>Comederos - Accesorios - Comida</p>
-        <!-- Producto 1 -->
-            <article>
-                <img src="/img/churrasquito.png" alt="Juguete Churrasquito">
-                <h4>Juguete Churrasquito</h4>
-                <span>$150</span>
-            </article>
-        <!-- Producto 2 -->
-            <article>
-                <img src="/img/comedero.png" alt="Comedero para perro">
-                <h4>Comedero para perro</h4>
-                <span>$250</span>
-            </article>
-        <!-- Producto 3 -->
-            <article>
-                <img src="/img/Huesito.png" alt="Juguete huesito">
-                <h4>Juguete huesito</h4>
-                <span>$650</span>
-            </article>
+        <section class="seccionProductos">
+            <div class="infoProd">
+                <img src="./img/patita-de-perro.png" alt="Huella de perro">
+                <h3>Productos Destacados</h3>
+                <a href="#">Comederos</a>
+                <a href="#">Accesorios</a>
+                <a href="#">Comida</a>
+            </div>
+            <div class="itemProd">
+                <article>
+                    <img src="./img/churrasquito.png" alt="Juguete Churrasquito">
+                    <p>Juguete Churrasquito</p>
+                    <span>$150</span>
+                </article>
+                <article>
+                    <img src="./img/comedero.png" alt="Comedero para perro">
+                    <p>Comedero para perro</p>
+                    <span>$250</span>
+                </article>
+                <article>
+                    <img src="./img/Huesito.png" alt="Juguete Huesito">
+                    <p>Juguete Huesito</p>
+                    <span>$650</span>
+                </article>
+            </div>
         </section>
-    <!-- Seccion de formulario -->
-        <section>
-            <form>
-                <h2>Contactanos</h2>
-                <label for="Nombre">Nombre y apellido</label>
-                <input type="text"> <br>
-                <label for="Email">Ingresa tu correo electronico</label>
-                <input type="email"> <br>
-                <label for="Telefono">Telefono</label>
-                <input type="number" name="Telefono"> <br>
-                <button type="reset">Resetear</button>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+    <!-- Formulario de contacto -->
+        <form>
+            <h2>Contáctanos</h2>
+            <label for=""><input type="text" placeholder="Nombre y Apellido"></label>
+            <label for=""><input type="email" placeholder="Ingresá tu correo electrónico"></label>
+            <label for=""><input type="text" placeholder="Teléfono"></label>
+            <button type="reset" class="reset">Resetear</button>
+            <button type="submit" class="submit">Enviar</button>
+        </form>
     </main>
-<!-- Pie de pagina -->
     <footer>
-    <!-- Seccion de Suscripcion -->
-        <section>
-            <img src="/img/mensaje-suscripcion.png" alt="Icono de mensaje">
-            <p>Suscríbete para más novedades</p>
-            <input type="email" placeholder="Ingresa tu email" name="buscar">
+    <!-- Suscripcion -->
+        <div class="suscripcion">
+            <p><i class="fas fa-envelope"></i>Suscríbete para más novedades</p>
+            <label for=""><input type="text" placeholder="Ingresá tu correo electronico"></label>
             <button>Suscribirme</button>
-        </section>
-    <!-- Seccion de Informacion -->
+        </div>
+    <!-- Informacion de la empresa -->
         <section>
-        <!-- Direccion y contacto -->
-            <div>
-                <img src="/img/ubicacion.png" alt="ubicacion">
+            <div class="infoEmpresa">
+                <i class="fas fa-map-marker-alt"></i>
                 <h5>Localidad</h5>
-                <p>Calle - Provincia</p>
+                <p>Calle - provincia</p>
+                <i class="fab fa-whatsapp"></i>
+                <h5>Teléfono</h5>
+                <p>Número de teléfono</p>
+                <i class="fas fa-at"></i>
+                <h5>Correo Electrónico</h5>
+                <p>Dirección de correo</p>
             </div>
-        <!-- Telefono -->
-            <div>
-                <img src="/img/telefono.png" alt="Telefono">
-                <h5>Telefono</h5>
-                <p>Numero de telefono</p>
-            </div>
-        <!-- Correo electronico -->
-            <div>
-                <img src="/img/email.png" alt="Email">
-                <h5>Correo Electronico</h5>
-                <p>Direccion de correo</p>
-            </div>
-            <img src="/img/Logo.png" alt="Front Cat&Dog">
+            <a href="./index.html"><img src="./img/Logo.png" alt="Front Cat&Dog"></a>
         </section>
     <!-- Copyright -->
-        <section>
-            <p>Todos los derechos reservados Front End</p>
-        </section>
+        <p class="copyright">Todos los derechos reservados Front End</p>
     </footer>
 </body>
 </html>
