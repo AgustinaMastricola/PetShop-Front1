@@ -1,4 +1,6 @@
 /* Font family - google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 
 /* Estilos globales del documento */
 *{
@@ -6,7 +8,8 @@
     margin: 0%;
 }
 body{
-
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
 }
 li{
     list-style-type: none;
@@ -18,36 +21,48 @@ a{
 /* ------ HEADER ------*/
 /* Barra superior */
 header {
-
+    width: 100vw;
 }
-header div.barraSup{
+.barraSup{
     color: #F3F3F3;
     background-color: #222222;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3vh;
 }
-div.barraSup ul{
 
+.barraSup ul{
+    display: flex;
 }
-div.barraSup li{
 
-}
 /* Barra inferior */
-header div.barraInf{
+.barraInf{
     background-color: #F0A83E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
 }
-div.barraInf a{
-
+.barraInf a img{
+    position: relative;
+    top: 2px
 }
-div.barraInf nav{
-
+.barraInf nav{
+    font-size: 0.8rem;
+    width: 50%;
 }
-div.barraInf nav ul{
-
+.barraInf nav ul{
+    display: flex;
+    justify-content: space-around;
+    height: 27px;
+    align-items: center;
 }
-div.barraInf nav ul li{
-    
-    
+.barraInf nav ul li{
+    display: flex;
 }
-div.barraInf nav ul li a{
+.barraInf nav ul li a{
     color: #F3F3F3;
 }
 /* ------ FIN HEADER */
@@ -56,70 +71,127 @@ div.barraInf nav ul li a{
 /* ------ MAIN ------ */
 
 /* Seccion banner */
-section.bannerPrincipal{
-    background-image: url("../img/bg-banner.png")
+
+.bannerPrincipal{
+    background-image: url("../img/bg-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15%;
 }
-section.bannerPrincipal h2{
+.bannerPrincipal div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannerPrincipal div h2{
     color: #3C2313;
     background-color:#F3F3F3;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px;
 }
-section.bannerPrincipal p{
+.bannerPrincipal div p{
     color: #3C2313;
+    margin: 15px;
 }
-section.bannerPrincipal button{
+.bannerPrincipal div button{
     color: #F3F3F3;
     background-color: #F0A83E;
+    padding: 10px;
+    border-radius: 5px;
+    border: hidden;
 }
 
 /* Seccion productos */
-section.seccionProductos{
-
+.seccionProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
-.seccionProductos div{
-
+.infoProd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
-.seccionProductos div img{
-
+.infoProd img{
+    color: #F0A83E;
+    width: 65px;
+    height: 65px;
 }
-.seccionProductos div.infoProd h3{
+.infoProd h3{
     color: #3C2313;
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
-.seccionProductos div.infoProd a{
+.infoProd a{
     color: #666666;
 }
-.seccionProductos div.itemProd{
-
+.itemProd{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 50px;
 }
-.seccionProductos div.itemProd article{
+.itemProd article{
     background-color: #FBFAF6;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
-.seccionProductos div.itemProd article p{
+.itemProd article p{
     color: #3C2313;
 }
-.seccionProductos div.itemProd article span{
+.itemProd article span{
     color:#F0A83E;
 }
 
 
 /* Formulario de contacto */
 form{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    height: 350px;
 }
 form h2{
     color: #3C2313;
-}
-form label{
-
+    font-size: 1.6rem;
 }
 form input{
     color: #F3F3F3;
     background-color: #3C2313;
+    font-size: 1rem;
+    width: 340px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 20px;
 }
 ::placeholder{
     color: #F3F3F3;
+    font-size: 0.9rem;
 }
 form button{
     color: #FFFFFF;
+    border-radius: 35px;
+    border: none;
+    font-size: 0.9rem;
+    width: 130px;
+    height: 35px;
 }
 form button.reset{
     background-color: #8A8787;
@@ -133,42 +205,92 @@ form button.submit{
 /* ------ FOOTER ------ */
 
 /* Suscripcion */
-footer{
 
-}
-div.suscripcion{
+.suscripcion{
     background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
-div.suscripcion p{
+.suscripcion p{
     color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px;
 }
-div.suscripcion input{
-    color:#626262;
+.suscripcion p i{
+    margin: 7px;
 }
-div.suscripcion ::placeholder{
+.suscripcion div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+}
+.suscripcion input{
+    width: 300px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    padding: 12px 20px;
+}
+.suscripcion ::placeholder{
     color: #626262;
 }
-div.suscripcion button{
+.suscripcion button{
     color: #FFFFFF;
     background-color: #3C2313;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    margin: 0px 10px 0px 10px;
 }
+
 footer section{
     background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
 }
-section div.infoEmpresa i{
+footer section a{
+    padding-right: 10%;
+}
+.infoEmpresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+.infoEmpresa div{
+    display: flex;
+    align-items: center;
+}
+.infoEmpresa div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80%;
+    padding-left: 10px;
+}
+.infoEmpresa h5{
     color: #FFFFFF;
-    background-color: #8A8787;
-
+    font-size: 1.25rem;
 }
-div.infoEmpresa h5{
-    color: #FFFFFF;
-}
-div.infoEmpresa p{
+.infoEmpresa p{
     color: #8A8787;
+    font-size: 0.8;
 }
-footer p.copyright{
+.copyright{
     color: #FFFFFF;
     background-color: #222222;
+    font-size: 0.7rem;
+    text-align: center;
 }
 /* ------ FIN FOOTER ------- */
 
