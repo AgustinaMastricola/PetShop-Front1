@@ -1,11 +1,13 @@
 /* Font family - google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-
 /* Estilos globales del documento */
 *{
     box-sizing: border-box;
     margin: 0%;
+}
+html{
+    font-size: 10px;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -26,7 +28,7 @@ header {
 .barraSup{
     color: #F3F3F3;
     background-color: #222222;
-    font-size: 0.6rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,20 +46,17 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 10vh;
-}
-.barraInf a img{
-    position: relative;
-    top: 2px
+    width: 100%;
 }
 .barraInf nav{
-    font-size: 0.8rem;
+    font-size: 1.8rem;
     width: 50%;
 }
 .barraInf nav ul{
     display: flex;
     justify-content: space-around;
-    height: 27px;
-    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .barraInf nav ul li{
     display: flex;
@@ -91,7 +90,7 @@ header {
 .bannerPrincipal div h2{
     color: #3C2313;
     background-color:#F3F3F3;
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     font-weight: 400;
     border-radius: 5px;
     padding: 10px;
@@ -99,6 +98,7 @@ header {
 .bannerPrincipal div p{
     color: #3C2313;
     margin: 15px;
+    font-size: 2rem;
 }
 .bannerPrincipal div button{
     color: #F3F3F3;
@@ -106,6 +106,7 @@ header {
     padding: 10px;
     border-radius: 5px;
     border: hidden;
+    font-size: 1.8rem;
 }
 
 /* Seccion productos */
@@ -128,12 +129,13 @@ header {
 }
 .infoProd h3{
     color: #3C2313;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 .infoProd a{
     color: #666666;
+    font-size: 1.5rem;
 }
 .itemProd{
     display: flex;
@@ -149,6 +151,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    font-size: 1.8rem;
 }
 .itemProd article p{
     color: #3C2313;
@@ -169,12 +172,11 @@ form{
 }
 form h2{
     color: #3C2313;
-    font-size: 1.6rem;
+    font-size: 3.5rem;
 }
 form input{
     color: #F3F3F3;
     background-color: #3C2313;
-    font-size: 1rem;
     width: 340px;
     height: 50px;
     border-radius: 20px;
@@ -183,13 +185,13 @@ form input{
 }
 ::placeholder{
     color: #F3F3F3;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 form button{
     color: #FFFFFF;
     border-radius: 35px;
     border: none;
-    font-size: 0.9rem;
+    font-size: 1.7rem;
     width: 130px;
     height: 35px;
 }
@@ -203,19 +205,24 @@ form button.submit{
 
 
 /* ------ FOOTER ------ */
+footer{
+    width: 100vw;
+}
 
 /* Suscripcion */
 
 .suscripcion{
     background-color: #F0A83E;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    width: 100%;
 }
 .suscripcion p{
     color: #FFFFFF;
-    font-size: 1.25rem;
+    font-size: 2.8rem;
     font-weight: 700;
     padding: 10px;
 }
@@ -226,7 +233,7 @@ form button.submit{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 500px;
+    width: 50%;
 }
 .suscripcion input{
     width: 300px;
@@ -247,13 +254,13 @@ form button.submit{
     height: 45px;
     margin: 0px 10px 0px 10px;
 }
-
 footer section{
     background-color: #3C2313;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 250px;
+    width: 100%;
 }
 footer section a{
     padding-right: 10%;
@@ -280,17 +287,20 @@ footer section a{
 }
 .infoEmpresa h5{
     color: #FFFFFF;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
 }
 .infoEmpresa p{
     color: #8A8787;
-    font-size: 0.8;
+    font-size: 2rem;
 }
 .copyright{
     color: #FFFFFF;
     background-color: #222222;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 /* ------ FIN FOOTER ------- */
+
+
+/*  MEDIA QUERY */
 
