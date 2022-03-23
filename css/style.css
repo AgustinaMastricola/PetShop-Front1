@@ -344,3 +344,21 @@ footer section a{
         font-size: 1.3rem;
     }
 }
+@media(max-width: 530px){
+    ul{
+        padding-inline-start: 0%;
+    }
+    body{
+        width: 100vw;
+        padding: 0%;
+    }
+    .barraInf a{
+        margin-left: 15%;
+    }
+    .barraInf a img{
+        width: 100px;
+    }
+    .suscripcion p{
+        opacity: 0;
+    }
+}
